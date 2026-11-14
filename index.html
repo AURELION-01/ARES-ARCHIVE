@@ -19,7 +19,7 @@
 <style>
   :root {
     color-scheme: dark;
-    /* Shared & Planner Variables */
+    
     --regolith: #0f0b09;
     --dust: #17110e;
     --panel: rgba(34, 25, 20, 0.88);
@@ -42,7 +42,7 @@
     --font-scifi: 'Orbitron', 'Space Grotesk', sans-serif;
     --font-grotesk: 'Space Grotesk', 'Inter', sans-serif;
 
-    /* Home & Team Screen Eye-Soothing Cosmos Variables */
+    
     --bg-cosmos: #060810;
     --home-rust: #d87656;
     --home-gold: #e6c694;
@@ -79,9 +79,7 @@
     color: var(--sand);
   }
 
-  /* ==========================================================================
-     VIEW 1: ARES ARCHIVE HOME SCREEN STYLES
-     ========================================================================== */
+
   #homeView {
     position: relative;
     min-height: 100vh;
@@ -443,7 +441,7 @@
     color: #7c8aa3 !important;
   }
 
-  /* Mars GIF Stage */
+  
   .planet-stage {
     position: relative;
     min-height: 540px;
@@ -888,9 +886,7 @@
     line-height: 1.7;
   }
 
-  /* ==========================================================================
-     VIEW 3: TEAM ARES ARCHIVE — SCI-FI MISSION COMMAND ROSTER PAGE
-     ========================================================================== */
+
   #teamView {
     display: none;
     position: relative;
@@ -1090,7 +1086,7 @@
     color: var(--home-sage);
   }
 
-  /* Sci-Fi Orbital Avatar Emblem */
+
   .crew-avatar-wrap {
     display: flex;
     align-items: center;
@@ -1190,7 +1186,7 @@
     color: #8b9bb8;
   }
 
-  /* Mission Manifesto Banner at Bottom of Team Page */
+
   .team-manifesto {
     margin-top: 44px;
     padding: 28px 32px;
@@ -2259,7 +2255,7 @@
   @media (max-width: 960px) { .panel-toggle { display: none; } }
 </style>
 <style id="ares-polish">
-/* ---------- shared: aurora, cursor glow, reveal ---------- */
+
 .aurora{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
 .aurora i{position:absolute;width:60vmax;height:60vmax;border-radius:50%;filter:blur(90px);opacity:.32;mix-blend-mode:screen;will-change:transform;animation:auroraDrift 28s ease-in-out infinite alternate}
 .aurora i:nth-child(1){background:radial-gradient(circle,#d87656,transparent 65%);left:-18vmax;top:-14vmax}
@@ -2288,7 +2284,7 @@ body.planner-active @keyframes riseIn{from{opacity:0;transform:translateY(26px)}
 .ticker-track{display:flex;gap:44px;width:max-content;animation:tick 40s linear infinite;font:500 11px var(--font-mono);letter-spacing:.22em;color:var(--home-muted);white-space:nowrap}
 .ticker-track span::before{content:"✦";color:var(--home-gold);margin-right:44px}
 @keyframes tick{to{transform:translateX(-50%)}}
-/* CSS-drawn Mars: drifting surface, polar cap, terminator */
+
 #marsFrame .planet-fallback{width:80%;position:relative;overflow:hidden;background:radial-gradient(circle at 30% 28%,#ffb48a 0%,#d8643c 34%,#8a3220 68%,#2a0f10 100%);box-shadow:inset -48px -28px 64px rgba(4,6,14,.88),inset 12px 10px 40px rgba(255,190,140,.18),0 0 70px rgba(216,118,86,.38),0 0 170px rgba(216,118,86,.15)}
 #marsFrame .planet-fallback::before{content:"";position:absolute;inset:0;width:auto;height:auto;border-radius:50%;mix-blend-mode:normal;background-color:transparent;background-image:radial-gradient(ellipse 14% 9% at 20% 30%,rgba(90,30,20,.55),transparent 70%),radial-gradient(ellipse 18% 11% at 58% 60%,rgba(70,24,18,.5),transparent 70%),radial-gradient(ellipse 10% 7% at 82% 24%,rgba(255,205,160,.24),transparent 70%),radial-gradient(ellipse 22% 8% at 40% 82%,rgba(60,20,16,.45),transparent 70%);background-size:100% 100%;background-repeat:repeat-x;animation:marsSpin 70s linear infinite}
 #marsFrame .planet-fallback::after{content:"";position:absolute;inset:0;border-radius:50%;background:radial-gradient(ellipse 32% 9% at 50% 1%,rgba(255,255,255,.78),transparent 72%)}
@@ -2498,7 +2494,7 @@ body.planner-active @keyframes riseIn{from{opacity:0;transform:translateY(26px)}
     </div>
 
     <div class="crew-grid">
-      <!-- Member 1: Atmajyoti Chakraborty -->
+      
       <article class="crew-card" style="--crew-accent: #e6c694; --crew-glow: rgba(230, 198, 148, 0.22);">
         <div class="crew-top-meta">
           <span class="crew-callsign">ARES-01 // COMMAND LEAD</span>
@@ -2531,7 +2527,7 @@ body.planner-active @keyframes riseIn{from{opacity:0;transform:translateY(26px)}
         </div>
       </article>
 
-      <!-- Member 2: Srijan Banerjee -->
+      
       <article class="crew-card" style="--crew-accent: #8ab4f8; --crew-glow: rgba(138, 180, 248, 0.22);">
         <div class="crew-top-meta">
           <span class="crew-callsign">ARES-02 // AI &amp; TELEMETRY</span>
@@ -2564,7 +2560,7 @@ body.planner-active @keyframes riseIn{from{opacity:0;transform:translateY(26px)}
         </div>
       </article>
 
-      <!-- Member 3: Pratyusha Dolui -->
+      
       <article class="crew-card" style="--crew-accent: #6ee7b7; --crew-glow: rgba(110, 231, 183, 0.22);">
         <div class="crew-top-meta">
           <span class="crew-callsign">ARES-03 // EVA OPERATIONS</span>
@@ -2753,7 +2749,7 @@ body.planner-active @keyframes riseIn{from{opacity:0;transform:translateY(26px)}
         </div>
       </div>
 
-      <!-- 1. Click-to-Move & Navigation Mode -->
+      
       <div class="section-card">
         <h2>
           <span>1. Surface Navigation Control</span>
@@ -2772,7 +2768,7 @@ body.planner-active @keyframes riseIn{from{opacity:0;transform:translateY(26px)}
         </div>
       </div>
 
-      <!-- 2. NASA Mars Trek WMTS & DEM Layers -->
+      
       <div class="section-card">
         <h2>
           <span>2. NASA Mars Trek Layers</span>
@@ -2808,7 +2804,7 @@ body.planner-active @keyframes riseIn{from{opacity:0;transform:translateY(26px)}
         </div>
       </div>
 
-      <!-- 3. NASA Mission Landmarks & Presets -->
+      
       <div class="section-card">
         <h2>
           <span>3. Jump To NASA Landmarks</span>
@@ -2817,7 +2813,7 @@ body.planner-active @keyframes riseIn{from{opacity:0;transform:translateY(26px)}
         <div class="places" id="places"></div>
       </div>
 
-      <!-- 4. AI4Mars Terrain Taxonomy Reference & Rover Segmentation Preview -->
+      
       <div class="section-card">
         <h2>
           <span>4. AI4Mars Terrain Classifier</span>
@@ -2878,7 +2874,7 @@ body.planner-active @keyframes riseIn{from{opacity:0;transform:translateY(26px)}
         </div>
       </div>
 
-      <!-- 4b. Editable assumptions -->
+      
       <div class="section-card">
         <h2><span>Assumptions (editable)</span><span class="p-badge model">NOT NASA DATA</span></h2>
         <div class="assump-grid">
@@ -2892,7 +2888,7 @@ body.planner-active @keyframes riseIn{from{opacity:0;transform:translateY(26px)}
         <p class="lead">Speed follows Tobler's hiking function; effort follows a Pandolf-style model (Earth-derived; 80 kg crew + 40 kg suit assumed). Mars gravity (3.71 m/s²) is not modelled, and slopes come from the simulated DEM. Results are relative estimates, not predictions. 100% O₂ = a full PLSS duration of flat, firm-ground walking.</p>
       </div>
 
-      <!-- 5. Astronaut EVA Route & PLSS Life Support -->
+     
       <div class="section-card">
         <h2>
           <span>5. EVA Route &amp; Life Support (PLSS)</span>
